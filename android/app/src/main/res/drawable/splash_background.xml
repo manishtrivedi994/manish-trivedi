@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Background gradient that matches React Native splash -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="#1f2937"
+                android:endColor="#111827"
+                android:angle="135" />
+        </shape>
+    </item>
+    
+    <!-- React Logo matching the RN splash - made more prominent -->
+    <item android:gravity="center">
+        <layer-list>
+            <!-- Central dot -->
+            <item android:gravity="center">
+                <shape android:shape="oval">
+                    <size android:width="8dp" android:height="8dp" />
+                    <solid android:color="#a855f7" />
+                </shape>
+            </item>
+            
+            <!-- Horizontal ellipse -->
+            <item android:gravity="center">
+                <shape android:shape="oval">
+                    <size android:width="100dp" android:height="30dp" />
+                    <stroke android:width="3dp" android:color="#a855f7" />
+                    <solid android:color="@android:color/transparent" />
+                </shape>
+            </item>
+            
+            <!-- Rotated ellipse 60 degrees -->
+            <item android:gravity="center">
+                <rotate android:fromDegrees="60">
+                    <shape android:shape="oval">
+                        <size android:width="100dp" android:height="30dp" />
+                        <stroke android:width="3dp" android:color="#a855f7" />
+                        <solid android:color="@android:color/transparent" />
+                    </shape>
+                </rotate>
+            </item>
+            
+            <!-- Rotated ellipse -60 degrees -->
+            <item android:gravity="center">
+                <rotate android:fromDegrees="-60">
+                    <shape android:shape="oval">
+                        <size android:width="100dp" android:height="30dp" />
+                        <stroke android:width="3dp" android:color="#a855f7" />
+                        <solid android:color="@android:color/transparent" />
+                    </shape>
+                </rotate>
+            </item>
+        </layer-list>
+    </item>
+    
+    <!-- Simple name placeholder -->
+    <item android:gravity="center" android:top="100dp">
+        <shape android:shape="rectangle">
+            <size android:width="240dp" android:height="3dp" />
+            <solid android:color="#a855f7" />
+            <alpha android:alpha="0.8" />
+        </shape>
+    </item>
+</layer-list>
