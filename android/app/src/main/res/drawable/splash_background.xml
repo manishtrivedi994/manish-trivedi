@@ -1,65 +1,98 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
-    <!-- Background gradient that matches React Native splash -->
+    <!-- Background gradient -->
     <item>
         <shape android:shape="rectangle">
             <gradient
-                android:startColor="#1f2937"
-                android:endColor="#111827"
+                android:startColor="#000000"
+                android:endColor="#1a1a1a"
                 android:angle="135" />
         </shape>
     </item>
     
-    <!-- React Logo matching the RN splash - made more prominent -->
+    <!-- Decorative elements -->
     <item android:gravity="center">
         <layer-list>
-            <!-- Central dot -->
-            <item android:gravity="center">
+            <!-- Decorative line -->
+            <item android:gravity="center" android:top="120dp">
+                <shape android:shape="rectangle">
+                    <size android:width="231dp" android:height="2dp" />
+                    <solid android:color="#a855f7" />
+                    <alpha android:alpha="0.8" />
+                </shape>
+            </item>
+            
+            <!-- React Logo - Central Circle -->
+            <item android:gravity="center" android:top="-200dp">
                 <shape android:shape="oval">
                     <size android:width="8dp" android:height="8dp" />
                     <solid android:color="#a855f7" />
                 </shape>
             </item>
             
-            <!-- Horizontal ellipse -->
-            <item android:gravity="center">
+            <!-- React Logo - Horizontal Ellipse -->
+            <item android:gravity="center" android:top="-200dp">
                 <shape android:shape="oval">
-                    <size android:width="100dp" android:height="30dp" />
-                    <stroke android:width="3dp" android:color="#a855f7" />
+                    <size android:width="80dp" android:height="20dp" />
+                    <stroke android:width="2.5dp" android:color="#a855f7" />
                     <solid android:color="@android:color/transparent" />
                 </shape>
             </item>
             
-            <!-- Rotated ellipse 60 degrees -->
-            <item android:gravity="center">
+            <!-- React Logo - Diagonal Ellipse 1 (60 degrees) -->
+            <item android:gravity="center" android:top="-200dp">
                 <rotate android:fromDegrees="60">
                     <shape android:shape="oval">
-                        <size android:width="100dp" android:height="30dp" />
-                        <stroke android:width="3dp" android:color="#a855f7" />
+                        <size android:width="80dp" android:height="20dp" />
+                        <stroke android:width="2.5dp" android:color="#a855f7" />
                         <solid android:color="@android:color/transparent" />
                     </shape>
                 </rotate>
             </item>
             
-            <!-- Rotated ellipse -60 degrees -->
-            <item android:gravity="center">
+            <!-- React Logo - Diagonal Ellipse 2 (-60 degrees) -->
+            <item android:gravity="center" android:top="-200dp">
                 <rotate android:fromDegrees="-60">
                     <shape android:shape="oval">
-                        <size android:width="100dp" android:height="30dp" />
-                        <stroke android:width="3dp" android:color="#a855f7" />
+                        <size android:width="80dp" android:height="20dp" />
+                        <stroke android:width="2.5dp" android:color="#a855f7" />
                         <solid android:color="@android:color/transparent" />
                     </shape>
                 </rotate>
             </item>
+            
+            <!-- Decorative circles -->
+            <item android:gravity="center" android:top="-100dp" android:left="-150dp">
+                <shape android:shape="oval">
+                    <size android:width="4dp" android:height="4dp" />
+                    <solid android:color="#a855f7" />
+                    <alpha android:alpha="0.3" />
+                </shape>
+            </item>
+            
+            <item android:gravity="center" android:top="-50dp" android:right="-150dp">
+                <shape android:shape="oval">
+                    <size android:width="3dp" android:height="3dp" />
+                    <solid android:color="#a855f7" />
+                    <alpha android:alpha="0.4" />
+                </shape>
+            </item>
+            
+            <item android:gravity="center" android:top="100dp" android:left="-120dp">
+                <shape android:shape="oval">
+                    <size android:width="2dp" android:height="2dp" />
+                    <solid android:color="#a855f7" />
+                    <alpha android:alpha="0.5" />
+                </shape>
+            </item>
+            
+            <item android:gravity="center" android:top="150dp" android:right="-120dp">
+                <shape android:shape="oval">
+                    <size android:width="5dp" android:height="5dp" />
+                    <solid android:color="#a855f7" />
+                    <alpha android:alpha="0.2" />
+                </shape>
+            </item>
         </layer-list>
     </item>
-    
-    <!-- Simple name placeholder -->
-    <item android:gravity="center" android:top="100dp">
-        <shape android:shape="rectangle">
-            <size android:width="240dp" android:height="3dp" />
-            <solid android:color="#a855f7" />
-            <alpha android:alpha="0.8" />
-        </shape>
-    </item>
-</layer-list>
+</layer-list> 
